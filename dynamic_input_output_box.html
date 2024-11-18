@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOGO Offer Page</title>
+
+    
+
+    <!-- Bootstrap CSS from CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Inline CSS -->
+
+    <style>
+
+        .container {
+
+            max-width: 600px;
+
+            margin: 0 auto;
+
+        }
+
+
+        .unit-option {
+
+            transition: all 0.3s ease;
+
+            cursor: pointer;
+
+            padding: 20px;
+
+            border: 1px solid hsl(152, 13%, 72%);
+
+            border-radius: 5px;
+
+            margin-bottom: 15px;
+
+            background-color: #f8f8f8;
+
+        }
+
+
+        .unit-option.expanded {
+
+            background-color: #d4edda;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+            transform: scale(1.05);
+
+            border: #333333;
+
+            border: 1px solid hsl(148, 87%, 3%);
+
+        }
+
+
+        .dropdowns {
+
+            display: none; /* Initially hidden */
+
+            flex-direction: row; /* Arrange dropdowns side by side */
+
+            gap: 10px;
+
+            margin-top: 10px;
+
+        }
+
+
+        .price {
+
+            font-size: 1.2em;
+
+            font-weight: bold;
+
+            color: #333;
+
+            text-align: right;
+
+        }
+
+
+        .original-price {
+
+            text-decoration: line-through;
+
+            color: #888;
+
+            margin-left: 8px;
+
+        }
+
+
+        .discount {
+
+            color: green;
+
+            font-weight: bold;
+
+            text-align: right;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <h1 class="text-center" style="color: green;">Bundle & Save</h1>
+
+
+        <!-- Vertical stack of boxes -->
+
+        <div class="unit-option">
+
+            <label>
+
+                <input type="radio" name="units" onclick="expandBox(this)"> 1 Pair
+
+                <div class="option-box">
+
+                    <p>DKK 195.00 <span class="discount">50% Off</span></p>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </label>
+
+        </div>
+
+
+        <div class="unit-option">
+
+            <label>
+
+                <input type="radio" name="units" onclick="expandBox(this)"> 2 Pairs
+
+                <div class="option-box">
+
+                    <p>DKK 345.00 <span class="discount">40% Off</span></p>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </label>
+
+        </div>
+
+
+        <div class="unit-option">
+
+            <label>
+
+                <input type="radio" name="units" onclick="expandBox(this)"> 3 Pairs
+
+                <div class="option-box">
+
+                    <p>DKK 345.00 <span class="discount">60% Off</span></p>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="dropdowns">
+
+                        <!-- Dropdown for size -->
+
+                        <select class="form-control">
+
+                            <option>Size</option>
+
+                            <option>S</option>
+
+                            <option>M</option>
+
+                            <option>L</option>
+
+                        </select>
+
+                        <!-- Dropdown for color -->
+
+                        <select class="form-control">
+
+                            <option>Colour</option>
+
+                            <option>Black</option>
+
+                            <option>White</option>
+
+                            <option>Red</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </label>
+
+        </div>
+
+
+        <div class="container mt-5">
+
+            <div class="row align-items-center">
+
+                <div class="col text-left font-weight-bold" style="color: green;">
+
+                    Free 2 Day Shipping
+
+                </div>
+
+                <div class="col text-right font-weight-bold">
+
+                    Total: DKK 360.00
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btn btn-success btn-block">+ Add to Cart</button>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function expandBox(inputElement) {
+
+            // Get all unit options
+
+            const unitOptions = document.querySelectorAll('.unit-option');
+
+
+            // Loop through all unit options
+
+            unitOptions.forEach(option => {
+
+                // Hide dropdowns and remove 'expanded' class from all options
+
+                option.classList.remove('expanded');
+
+                const dropdowns = option.querySelectorAll('.dropdowns');
+
+                dropdowns.forEach(dropdown => dropdown.style.display = 'none');
+
+            });
+
+
+            // Add 'expanded' class to the selected option
+
+            const selectedOption = inputElement.closest('.unit-option');
+
+            selectedOption.classList.add('expanded');
+
+
+            // Show the dropdowns for the selected option
+
+            const dropdowns = selectedOption.querySelectorAll('.dropdowns');
+
+            dropdowns.forEach(dropdown => dropdown.style.display = 'flex');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
